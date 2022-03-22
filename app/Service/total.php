@@ -15,7 +15,7 @@
             $result = $conn->query($sql);
             //display data on web page
             while($row = mysqli_fetch_array($result)){
-                echo " Total all: ". $row['SUM(total)'];
+                echo "<b>TOTAL ALL : </b>". "<b>" . $row['SUM(total)'] . "</b>";
                 echo "<br>";
             }
 ?>
