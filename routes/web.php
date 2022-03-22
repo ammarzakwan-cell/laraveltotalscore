@@ -12,12 +12,12 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 
-
+*/
 Route::get('/', function () {
     return view('welcome');
-});*/
+});
 
 
-use App\Http\Controllers\ScoreController;
+/*use App\Http\Controllers\ScoreController;
  
-Route::resource('scores', ScoreController::class);
+Route::resource('scores', ScoreController::class);*/
