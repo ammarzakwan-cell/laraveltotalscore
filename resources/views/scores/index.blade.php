@@ -22,7 +22,14 @@
             <p>{{ $message }}</p>
         </div>
         @endif
-        <table class="table">
+        <style>{
+            .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+                background-color: #blue;
+            }
+
+            }
+            </style>
+        <table class="table table-striped table-hover">
             <thead class= "thead-dark">
                 <tr>
                     <th>#</th>
@@ -37,7 +44,7 @@
             <tbody>
                 @foreach ($scores as $score)
                 <tr>
-                    <td>{{ $score->id }}</td>
+                    <th scope="row">{{ $score->id }}</td>
                     <td>{{ strtoupper($score->name) }}</td>
                     <td>{{ $score->g1 }}</td>
                     <td>{{ $score->g2 }}</td>
