@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Score;
+use \App\Models\Score;
 
 use Illuminate\Http\Request;
 
