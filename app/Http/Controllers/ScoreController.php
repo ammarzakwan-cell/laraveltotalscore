@@ -63,7 +63,7 @@ public function show(Score $score){
     * @param  \App\Score  $score
     * @return \Illuminate\Http\Response
     */
-public function edit(score $score){
+public function edit(Score $score){
     return view('scores.edit',compact('score'));
 }
     /**
