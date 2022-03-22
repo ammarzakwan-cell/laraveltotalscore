@@ -2,8 +2,6 @@
 
 namespace App\Http\Controllers;
 
-namespace App\models;
-
 use App\Models\Score;
 
 use Illuminate\Http\Request;
