@@ -15,7 +15,7 @@ class ScoreController extends Controller
 * @return \Illuminate\Http\Response
 */
 public function index(){
-    $data['scores'] = Score::orderBy('id')->paginate(5);
+    $data['scores'] = Score::orderBy('id')->paginate(7);
     return view('scores.index', $data);
 }
     /**
